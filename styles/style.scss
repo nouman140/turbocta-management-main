@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "@fortawesome/fontawesome-svg-core/styles.css";
+
+@layer base {
+  @import "base";
+  html {
+    --color-primary: #b1976b;
+  }
+}
+
+@layer components {
+  @import "components";
+  @import "navigation";
+  @import "buttons";
+}
+
+@layer utilities {
+  @import "utilities";
+}
+.theme-color {
+  color: #e4b96f;
+}
+.button {
+  background-color: #e4b96f;
+}
+.order {
+  background-color: #fffc44;
+}
+.hero {
+  background-image: url("../public/images/hero-section.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-repeat: cover;
+}
+
+.hero-body {
+  width: 100% !important;
+  background-color: #182434;
+  opacity: 0.9;
+  transition: 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+@media screen and (max-width: 440px) {
+  .hero-heading {
+    font-size: 1.441406rem !important;
+  }
+}
+
+.calculate {
+  background-color: #182434;
+}
+.about {
+  background-image: url("../public/images/about.jpg");
+  @media screen and (max-width: 1024px) {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-repeat: cover;
+  }
+}
+.about-body {
+  width: 100% !important;
+  background-color: #182434;
+  opacity: 0.8;
+  transition: 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.text-color {
+  color: #b1976b;
+}
+.background-color {
+  background-color: #182434;
+}
+.started {
+  height: 100% !important;
+  background-image: url("../public/images/beneficial.jpg");
+  @media screen and (max-width: 1024px) {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-repeat: cover;
+  }
+}
+.started-body {
+  width: 100% !important;
+  background-color: #182434;
+  opacity: 0.8;
+  transition: 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.exemptions {
+  background-image: url("../public/images/exemptions.jpg");
+  background-position: 0 -442px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.exemptions-body {
+  width: 100% !important;
+  background-color: #182434;
+  opacity: 0.8;
+  transition: 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.btns {
+  @media screen and (max-width: 375px) {
+    width: 80px !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+  }
+}
+.second-break-point {
+  width: 100%;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  height: 75px;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
